@@ -1,4 +1,4 @@
-# Uid (Universal ID)
+# laravel-uid (Universal ID)
 This package provides Stripe-like UIDs for your Laravel models.
 
 ## Examples
