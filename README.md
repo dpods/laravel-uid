@@ -1,4 +1,4 @@
-# Uid
+# Uid (Universal ID)
 This package provides Stripe-like UIDs for your Laravel models.
 
 ## Examples
@@ -118,4 +118,18 @@ class Book extends Model
  
  >>> $book2->uid;
  => "book_PTgKOt1IGBIhRXj7"   
+```
+
+## Usage
+
+You can look up models by UID using the `findByUid` method on any model that uses the UID trait
+
+```bash
+>>> $book = Book::findByUid('book_92lVVcDeFmMcFzG4');
+=> App\Book {#2960
+     id: 5,
+     uid: "book_92lVVcDeFmMcFzG4",
+     created_at: "2020-05-29 04:11:39",
+     updated_at: "2020-05-29 04:11:39",
+   }
 ```
