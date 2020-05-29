@@ -9,7 +9,7 @@
             "email": "david.glassanos@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
             "Dpods\\Uid\\": "src/"
