@@ -1,7 +1,20 @@
 # Uid
 This package provides Stripe-like UIDs for your Laravel models.
 
-## Example
+## Examples
+
+```bash
+>>> $book->uid;
+=> "book_F9WqctEs3QYg9iT0"
+
+>>> $user->uid;
+=> "usr_F9WqctEs3QYg9iT0"
+ 
+>>> $order->uid;
+=> "ord_F9WqctEs3QYg9iT0"
+```
+
+## Installation
 
 ### 1. Add database column
 #### 1.1 If creating a new model
