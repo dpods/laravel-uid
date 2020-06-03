@@ -35,7 +35,7 @@ Open up the migration file for the model and add a `uid` field
     {
         Schema::create('books', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('uid', 32);
+            $table->string('uid', 32)->unique();
             $table->timestamps();
         });
     }
@@ -58,7 +58,7 @@ Open up the migration file you just created and add a `uid` field
         public function up()
         {
             Schema::table('books', function (Blueprint $table) {
-                $table->string('uid', 32)->after('id');
+                $table->string('uid', 32)->after('id')->unique();
             });
         }
     
